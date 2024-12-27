@@ -1,0 +1,9 @@
+body{
+    background-color:rgb(201, 186, 181);
+}
+td{
+    border: 2px solid black;
+}
+.red{
+    background-color: red;
+}
