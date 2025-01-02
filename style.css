@@ -1,9 +1,15 @@
 body{
     background-color:rgb(201, 186, 181);
 }
-td{
+table td{
     border: 2px solid black;
 }
 .red{
     background-color: red;
+}
+#firstdiv{
+    color: pink;
+}
+.orange{
+    background-color: blue;
 }
