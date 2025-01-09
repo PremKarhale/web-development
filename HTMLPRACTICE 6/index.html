@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to calculate specificity & priority</title>
+    <style>
+        /* To element priority is given as 1 */
+        h1{
+            color: yellow; 
+            background-color: yellow; 
+        }
+        #first {
+            background-color: rgb(102, 128, 0);
+        }
+       
+        /* TO ALL THE CLASS PRIORITY IS GIVEN AS 10 */
+        .yellow {
+            background-color: yellow;
+        }
+
+        .purple{
+            background-color: purple;
+        }
+        .red{
+            background-color: red;
+        }
+       
+
+    </style>
+
+
+
+</head>
+
+<body>
+    <h1 id="first" class="yellow purple red  DATA-X=a "> hey iam first heaser tag name h1</h1>
+
+</body>
+
+</html>
