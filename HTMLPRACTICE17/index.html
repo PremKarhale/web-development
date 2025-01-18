@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variables </title>
+    <style>
+        :root{
+          --color:rgba(186, 118, 40, 0.722);
+          --seccolor: rgba(59, 137, 35, 0.673);
+            
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .first{
+            background-color: var(--color);
+        }
+        .second{
+            background-color: var(--seccolor);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+           
+            list-style: none;
+            padding: 34px;
+
+        }
+        ul li:first-child{
+            --color:rgba(209, 34, 69);
+            background-color: var(--color);
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        <ul>
+            <li>name </li>
+            <li>class</li>
+            <li>rollno</li>
+        </ul>
+    </div>
+    <div class="second">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem consequatur error totam aspernatur maxime, perferendis ratione tenetur quod quaerat dolore magni qui ut quo sint ipsa numquam illo nisi atque nemo. Numquam quos quo assumenda eveniet commodi nam necessitatibus tempora vero, atque culpa, suscipit nobis.
+        </p>
+    </div>
+    
+</body>
+</html>
