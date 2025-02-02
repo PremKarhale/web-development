@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>pseudo elements</title>
+    <style>
+        /* .box1{
+            border: 2px solid black;
+            margin: 7px;
+        } */
+         .box *{
+            border: 2px solid black;
+            margin: 7px;
+         }
+         .box::before{
+            position: relative;
+            content:"hey how are you";
+            border: 2px solid burlywood;
+            left: 8px;
+         }
+         .box::after{
+            content:"hey how are you doing ?";
+            position: relative;
+            border: 2px solid burlywood;
+            left: 8px;
+         }
+         ::selection{
+            /* background-color: black; */
+            background-color: rgba(214, 161, 92, 0.493);
+            color: black;
+         }
+
+    </style>
 </head>
 <body>
+    <div class="box">
+        <div class="box1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem impedit, molestias sed voluptatibus error voluptates ratione officia esse consequuntur eaque similique tempore ducimus culpa amet quaerat reprehenderit facilis iusto. Architecto, soluta saepe quasi molestiae minus dolore tenetur eius odit ut, dolor consequatur velit deleniti labore quaerat sed doloribus totam obcaecati blanditiis ullam non iusto nobis. Eos in iusto recusandae unde temporibus sed illum, id reprehenderit asperiores eius provident exercitationem vel culpa quis, maiores est. Doloribus non vitae soluta ea voluptates aliquid a neque maxime ut magni numquam ipsam, ipsum consequatur, corporis ex ad quos, sequi tenetur quasi. Ad praesentium sunt nam? Necessitatibus, impedit sapiente! Ipsa, blanditiis ratione. Veniam labore dolorum pariatur! Totam error nulla magni minima iste! Maxime exercitationem totam reprehenderit asperiores fugiat dolore.</div>
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iste animi adipisci impedit inventore tenetur a saepe ut officia incidunt illum asperiores non, perferendis possimus temporibus fugit in voluptatibus obcaecati maxime. Quibusdam maiores voluptas reiciendis sapiente, est vel commodi mollitia blanditiis placeat aspernatur aliquam iste!</div>
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem unde provident voluptates, blanditiis perferendis accusantium! Dolorum, eos sed sequi quasi a totam voluptate.</div>
+    </div>
     
 </body>
 </html>
