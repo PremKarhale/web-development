@@ -1,27 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shadow</title>
     <style>
-          
-
-        .box{
+        *{
+            margin: 0px;
+        }
+        
+        .box {
             text-align: center;
             padding: 45px;
             border: 2px solid black;
-           box-shadow: 5px 15px 5px rgb(169, 178, 181);
+            box-shadow: 5px 15px 5px rgb(169, 178, 181);
         }
-        .textshadow{
+
+        .textshadow {
             text-shadow: 8px 8px 7px rgb(124, 95, 58);
             outline: 2px solid black;
         }
+
+        div.box1 {
+            margin: 8px;
+            border: 2px solid black;
+            padding: 1%;
+        }
+
+        div.para {
+            background-color: orange;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 1px solid yellow;
+        }
+
+        div.capsule span {
+            padding: 3px;
+            border: 2px solid black;
+            border-radius: 18px;
+            background-color: rgba(204, 204, 224, 0.603);
+            color:blue;
+            border: none;        
+        }
+        div span:hover{
+            background-color: white;
+
+        }
+
+
+        div.capsule {
+            padding: 13px 24px 22px 0px;
+        }
     </style>
 </head>
+
 <body>
     <div class="box"> i am the box</div>
     <br>
-    <p class="textshadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ex exercitationem quasi blanditiis illo veritatis ullam error quis in nam provident est nostrum possimus amet nulla deleniti aspernatur aliquid, libero vel voluptate quod ipsam?</p>
+    <p class="textshadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ex exercitationem quasi
+        blanditiis illo veritatis ullam error quis in nam provident est nostrum possimus amet nulla deleniti aspernatur
+        aliquid, libero vel voluptate quod ipsam?</p>
+    <div class="box1">
+        <div class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis dignissimos sunt
+            inventore odit debitis voluptas illum a tenetur, temporibus quae architecto earum nemo maxime incidunt illo,
+            doloremque modi cupiditate eos cumque atque! Itaque voluptates natus a molestiae veniam nesciunt quis
+            quaerat minima doloremque laudantium. Doloremque.</div>
+        <div class="capsule">
+            <a target="_blank" href="https://www.youtube.com/watch?v=2PWgbyL3ex8&list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&index=32"> <span>NEXT</span>
+                <span>ABCD</span></a>
+           
+        </div>
+    </div>
 </body>
+
 </html>
