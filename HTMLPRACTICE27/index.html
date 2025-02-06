@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container{
+            border: 2px solid yellow;
+            display: grid;
+            grid-template-columns: [pehela]120px [dusra]100px [t];
+            grid-template-rows: [pehela]100px 100px 100px;
+            
+        }
+        .box{
+            height: 54px;
+            width: 54px;
+            border: 2px solid black;
+           
+        }
+      .box-4{
+        grid-row: 1/2;
+        grid-column: pehela/t;
+      }
+      .box-1{
+        grid-row: 1/2;
+        grid-column: 1/2;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box box-4">4</div>
+        <div class="box">5</div>
+    </div>
+    
+</body>
+</html>
