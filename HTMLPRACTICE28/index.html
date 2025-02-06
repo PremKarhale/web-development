@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid 2</title>
+    <style>
+        .container{
+            border: 2px solid yellow;
+            display: grid;
+            grid-template-areas: "nav nav nav"
+             "side article article" "footer footer footer";
+
+         
+        }
+        .box{
+            height: 54px;
+            /* width: 54px; */
+            border: 2px solid black;
+           
+        }
+        .box-1{
+      grid-area: nav;
+      }
+      .box-2{
+        grid-area: side;
+      }
+      .box-3{
+        grid-area:article;
+      }
+      .box-4{
+        grid-area: footer;
+      }
+     .box-5{
+        grid-area: nav;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
+    </div>
+    
+</body>
+</html>
