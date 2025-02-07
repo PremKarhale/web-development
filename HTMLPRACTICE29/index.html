@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Format using grid </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Baloo+Bhaijaan+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+    </style>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav {
+            padding: 12px 121px 12px 12px;
+        }
+
+        nav ul {
+            /* padding: 12px; */
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            /* gap: 34px; */
+        }
+
+        nav ul li {
+            font-size: large;
+            font-family: Poppins;
+            padding: 30px 0px 30px 66px;
+
+
+        }
+
+        div.img {
+            position: absolute;
+
+            right: 4px;
+            top: 43px;
+        }
+
+        div.img2 {
+            position: absolute;
+            top: 25px;
+            left: 30px;
+        }
+
+        .container {
+            /* height: 70vh; */
+            /* background-color: yellow; */
+            padding: 13px;
+            display: flex;
+            justify-content: center;
+        }
+
+        main {
+            justify-content: center;
+        }
+
+        .box {
+            width: 70%;
+            height: 60vh;
+            margin: 37px;
+            /* display: flex; */
+            justify-content: center;
+            font-size: 22px;
+            display: block;
+            font-family: Poppins;
+            padding: 12px;
+        }
+
+        div h2 {
+            font-family: 'Segoe UI';
+        }
+
+        .container2 {
+            /* background-color: red; */
+            display: grid;
+
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px 100px;
+            justify-content: center;
+            /* align-content: center; */
+            align-items: center;
+            gap: 222px;
+
+        }
+
+        .box1 {
+            height: 193px;
+            width: 292px;
+            border: none;
+            background-color: rgba(87, 86, 85, 0.041);
+        
+            border-radius: 5px;
+            display: flex;
+           justify-content: center;
+           padding: 12px;
+        }
+        
+        div.box1{
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .dabba{
+            position: relative;
+            height: 134px;
+            width: 124px;
+            border: 2px solid black;
+            display: grid;
+            bottom: 23px;  
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <nav>
+            <ul>
+                <li>Products</li>
+                <li>For business</li>
+                <li>Resources</li>
+                <li>support</li>
+                <li>our company</li>
+            </ul>
+            <div class="img"><img src="img2.PNG" alt=""></div>
+            <div class="img2"><img src="img1.PNG" alt=""></div>
+        </nav>
+        <div class="container">
+            <div class="box">
+                <h1>DOWNLOAD ULTRA EDIT FOR WINDOWS</h1>
+                <div>
+                    <h2>Download and try UltraEdit before you buy it! This download includes the full Windows version of
+                        the text editor. </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="box1">English
+                <div class="dabba"></div>
+              
+            </div>
+            <div class="box1">Deutsch</div>
+            <div class="box1">Italiano</div>
+            <div class="box1">Español</div>
+            <div class="box1">français</div>
+            <div class="box1">Português brasileiro</div>
+            <div class="box1">日本</div>
+            <div class="box1">한국어</div>
+            <div class="box1">华语</div>
+            <div class="box1">華語</div>
+        </div>
+    </main>
+
+</body>
+
+</html>
