@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>solution using animation & transition</title>
+    <style>
+        .container {
+            height: 77vh;
+            width: 80%;
+            background-color: yellow;
+            margin: auto;
+            position: relative;
+        }
+
+        .box {
+            height: 45px;
+            width: 45px;
+            background-color: red;
+            position: absolute;
+            bottom: 0px;
+            left: 1px;
+            border-radius: 24px;
+            animation: animationsX 3s  linear infinite
+           , animationY 1s ease-out infinite alternate;
+
+        }
+
+        @keyframes animationsX {
+
+            from {
+                left: 0;
+            }
+                to {
+                    left:100%;
+
+                }
+            
+        }
+
+        @keyframes animationY {
+            from {
+                bottom: 0;
+            }
+                to {
+                    bottom:100%;
+
+                }
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
