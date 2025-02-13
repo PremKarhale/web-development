@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object fit properties</title>
+    <style>
+        .container{
+            height: 391px;
+            width: 525px;
+            background-color: yellow;
+            background-image:url(https://cdn.create.vista.com/api/media/medium/561210872/stock-photo-side-view-smiling-bearded-man-summer-clothes-holding-hands-cheerful?token);
+            display: flex;
+            flex-direction: column ;
+            justify-content: center;
+            align-items: center;
+            object-fit: cover;
+            background-position:top right ;
+        }
+        img{
+            height:272px;
+            width: 343px;
+            border: 1px solid black;
+            /* object-fit: contain; */
+            object-position:top right;
+            object-fit: cover;
+            /* object-fit: fill; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src=https://cdn.create.vista.com/api/media/medium/561210872/stock-photo-side-view-smiling-bearded-man-summer-clothes-holding-hands-cheerful?token= alt=""> -->
+    </div>
+    
+</body>
+</html>
