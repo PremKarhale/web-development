@@ -49,17 +49,40 @@
     .hero {
         display: flex;
         flex-direction: column;
-        font-family: Segoe UI - 900;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         height: 75vh;
         width: 100%;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
         /* background-color: red; */
         position: relative;
         z-index: 10;
         color: white;
+        padding: 27px 0px 0px 0px;
+        bottom: -69px;
     }
+    .hero :nth-child(1) {
+        font-size: 41px;
+    }
+
+    .hero :nth-child(2) {
+margin: 0px 0px 18px 0px;
+        font-size: 57px;
+    }
+    .hero p{
+        margin: 23px;
+        font-size: larger;
+    }
+    .main input{
+        font-size: 41px;
+        background-color: rgba(23, 23, 23, 0.2);
+    }
+    /* button .shot{
+        position: relative;
+        left: 12px;
+    } */
 </style>
+
 
 <body>
     <div class="main">
@@ -74,19 +97,26 @@
             </svg>
             <div class="button">
                 <button
-                    style="height: 38px; width: 118px; margin: 5px; border-radius: 8px;opacity:0.2;border: 2px solid white; position: relative; z-index: 10;">English</button>
-                <button style="height: 38px; width: 77px; border-radius: 8px;">sign in</button>
+                    style="height: 38px; width: 118px; margin: 5px; border-radius: 8px;;border: 2px solid white; background-color: rgba(23, 23, 23, 0.2); color: white;font-weight:900; position: relative; z-index: 10;">English <img class="shot
+                    " src="Capture3.PNG" alt=""></button>
+                <button style="height: 38px; width: 77px; border-radius: 8px; background-color: red;position: relative; z-index: 10;font-weight:700 ; color: white; font-family:Poppins; border: none;">sign in</button>
             </div>
         </nav>
         <div class="box">
         </div>
         <div class="hero">
-            <h1 style="font-weight: bolder; ">Unlimited movies,</h1>
-            <h1> TV shows and more</h1>
+            <h1 style="font-weight: bolder; font-size: 57px;">Unlimited movies,TV</h1>
+            <h1> shows and more</h1>
             <h2>Starts at ₹149. Cancel at any time.</h2>
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
-
+            <div style="font-size:small; background-color: rgba(23,23,23,0.2);">
+                <button>  <input type="text" placeholder="Email Address" </button>
+                <button style="font-size: 32px; border-radius: 4px;  padding: 10px 34px 7px 11px; margin: 6px;background-color: red; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bold;">Get started</button>     
+              </div>
+            
         </div>
+      
+        
     </div>
 
 
