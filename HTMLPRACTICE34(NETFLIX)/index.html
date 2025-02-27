@@ -4,85 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Netflix website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-</style>
-<style>
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-    .main {
-        background-image: url(images/background-netflix.jpg);
-        height: 85dvh;
-        position: relative;
-    }
-
-    .main .box {
-        height: 85dvh;
-        width: 100%;
-        opacity: 0.67;
-        background-color: black;
-        position: absolute;
-        top: 0;
-    }
-
-    nav svg {
-        width: 157px;
-        height: 52px;
-        position: relative;
-        z-index: 10;
-    }
-
-    nav {
-        margin: auto;
-        width: 70dvw;
-        display: flex;
-        justify-content: space-between;
-        padding: 12px;
-    }
-
-    .hero {
-        display: flex;
-        flex-direction: column;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        height: 75vh;
-        width: 100%;
-        /* justify-content: center; */
-        align-items: center;
-        /* background-color: red; */
-        position: relative;
-        z-index: 10;
-        color: white;
-        padding: 27px 0px 0px 0px;
-        bottom: -69px;
-    }
-    .hero :nth-child(1) {
-        font-size: 41px;
-    }
-
-    .hero :nth-child(2) {
-margin: 0px 0px 18px 0px;
-        font-size: 57px;
-    }
-    .hero p{
-        margin: 23px;
-        font-size: larger;
-    }
-    .main input{
-        font-size: 41px;
-        background-color: rgba(23, 23, 23, 0.2);
-    }
-    /* button .shot{
-        position: relative;
-        left: 12px;
-    } */
-</style>
-
 
 <body>
     <div class="main">
@@ -97,27 +21,196 @@ margin: 0px 0px 18px 0px;
             </svg>
             <div class="button">
                 <button
-                    style="height: 38px; width: 118px; margin: 5px; border-radius: 8px;;border: 2px solid white; background-color: rgba(23, 23, 23, 0.2); color: white;font-weight:900; position: relative; z-index: 10;">English <img class="shot
-                    " src="Capture3.PNG" alt=""></button>
-                <button style="height: 38px; width: 77px; border-radius: 8px; background-color: red;position: relative; z-index: 10;font-weight:700 ; color: white; font-family:Poppins; border: none;">sign in</button>
+                    style="height: 38px; width: 118px; margin: 5px; border-radius: 8px;;border: 2px solid white; background-color: rgba(23, 23, 23, 0.2); color: white;font-weight:900; position: relative; z-index: 10;"> English
+                    </button>
+                <button
+                    style="height: 38px; width: 77px; border-radius: 8px; background-color: red;position: relative; z-index: 10;font-weight:700 ; color: white; font-family:Poppins; border: none;">sign
+                    in</button>
             </div>
         </nav>
         <div class="box">
         </div>
         <div class="hero">
-            <h1 style="font-weight: bolder; font-size: 57px;">Unlimited movies,TV</h1>
-            <h1> shows and more</h1>
+            <h1 style="font-weight: bolder; font-size: 57px;    font-weight: 900;
+            
+            text-shadow: 
+  2px 2px 0px rgba(0, 0, 0, 0.8), 
+  4px 4px 0px rgba(0, 0, 0, 0.6);
+"> <b>Unlimited movies</b>,</h1>
+            <h1> TV shows and more</h1>
             <h2>Starts at ₹149. Cancel at any time.</h2>
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <div style="font-size:small; background-color: rgba(23,23,23,0.2);">
-                <button>  <input type="text" placeholder="Email Address" </button>
-                <button style="font-size: 32px; border-radius: 4px;  padding: 10px 34px 7px 11px; margin: 6px;background-color: red; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bold;">Get started</button>     
-              </div>
-            
+            <div class="email-container">
+                <input type="email" placeholder="Email Address" class="email-input">
+                <button class="start-button">Get Started </button>
+            </div>
         </div>
-      
-        
     </div>
+    <main>
+        <div class="curved-section"></div>
+        <h2 style="    background-color:black;color: white;
+        padding: 19px 0px 0px 36px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        align-items:flex-start;display:flex;width: 84vw;margin: auto;
+    ">Treanding now</h2>
+        <div class="secondbox">
+
+            <div class="boxes"><img src="images/pushpa.jpg" alt="Pushpa"></div>
+            <div class="boxes"><img src="images/daku maharaj.jpg" alt=""></div>
+            <div class="boxes"><img src="images/squid game.webp" alt=""></div>
+            <div class="boxes"><img src="images/dhoom dham.webp" alt=""></div>
+            <div class="boxes"><img src="images/lucky bhaskar.webp" alt=""></div>
+        </div>
+        <h2 style="    background-color:black;color: white;
+        padding: 51px 0px 0px 53px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        align-items:flex-start;display:flex;width: 84vw;margin: auto;
+    ">More reasons to join</h2>
+
+        <div class="boxses1">
+            <div class="insidebox">
+                <h2 style="padding: 6px;font-size:24px;">Enjoy on your TV</h2>
+                <p style="font-size:14;padding: 6px;">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+                    Blu-ray players and more.</p>
+                <img style=" bottom: -78px;
+    left: 145px;" src="images/snip4.PNG" alt="">
+
+            </div>
+            <div class="insidebox">
+                <h2 style="padding: 6px;font-size:24px;">Download your shows to watch offline</h2>
+                <p style="font-size:14;padding: 6px;">Save your favourites easily and always have something to watch.
+                </p>
+                <img style="     position: relative;
+                bottom: -32px;
+                left: 159px;" src="images/snip5.PNG" alt="">
+            </div>
+            <div class="insidebox">
+                <h2 style="padding: 6px;font-size:24px;">Watch everywhere</h2>
+                <p style="font-size:14;padding: 6px;">Stream unlimited movies and TV shows on your phone, tablet, laptop
+                    and TV.
+                </p>
+                <img style="   position: relative;
+                left: 138px;
+                bottom: -111px;" src="images/snip6.PNG" alt="">
+            </div>
+            <div class="insidebox">
+                <h2 style="padding: 6px;font-size:24px;">Create profiles for kids</h2>
+                <p style="font-size:14;padding: 6px;">Send kids on adventures with their favourite characters in a space
+                    made just for them — free with your membership.
+                </p>
+                <img style="    position: relative;
+                bottom: -56px;
+                left: 151px;
+            " src="images/snip7.PNG" alt="">
+            </div>
+
+        </div>
+        <h2 style="    background-color:black;color: white;
+           padding: 20px 0px 20px 48px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        align-items:flex-start;display:flex;width: 84vw;margin: auto;
+    ">Frequently Asked Questions</h2>
+
+        <div class="blackboxses">
+            <div class="black">
+                <p>what is netflix ?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
+                    height="24" data-icon="PlusStandard" aria-hidden="true"
+                    class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-1ggvict e164gv2o5">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z"
+                        fill="currentColor"></path>
+                </svg>
+            </div>
+            <div class="black">
+                <p>How much does netflix cost ?</p> <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img"
+                    viewBox="0 0 24 24" width="24" height="24" data-icon="PlusStandard" aria-hidden="true"
+                    class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-1ggvict e164gv2o5">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z"
+                        fill="currentColor"></path>
+                </svg>
+            </div>
+            <div class="black">
+                <p>Where can i watch ?</p> <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img"
+                    viewBox="0 0 24 24" width="24" height="24" data-icon="PlusStandard" aria-hidden="true"
+                    class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-1ggvict e164gv2o5">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z"
+                        fill="currentColor"></path>
+                </svg>
+            </div>
+            <div class="black">
+                <p>How do I cancel ?</p> <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img"
+                    viewBox="0 0 24 24" width="24" height="24" data-icon="PlusStandard" aria-hidden="true"
+                    class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-1ggvict e164gv2o5">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z"
+                        fill="currentColor"></path>
+                </svg>
+            </div>
+            <div class="black">
+                <p>what can I Watch on Netflix ?</p> <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img"
+                    viewBox="0 0 24 24" width="24" height="24" data-icon="PlusStandard" aria-hidden="true"
+                    class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-1ggvict e164gv2o5">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z"
+                        fill="currentColor"></path>
+                </svg>
+            </div>
+            <div class="black">
+                <p>is Netflix good for kids ?</p> <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img"
+                    viewBox="0 0 24 24" width="24" height="24" data-icon="PlusStandard" aria-hidden="true"
+                    class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-1ggvict e164gv2o5">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z"
+                        fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="email-container1">
+            <p class="email-text">
+                Ready to watch? Enter your email to create or restart your membership.
+            </p>
+            <div class="email-form">
+                <input type="email" placeholder="Email address" class="email-input1">
+                <button class="email-button1">
+                    <h2>Get Started <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor"></path></h2> 
+
+                </button>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Questions? Call <a href="tel:000-800-919-1743">000-800-919-1743</a></p>
+    
+            <div class="footer-links">
+                <div>
+                    <a href="#">FAQ</a>
+                    <a href="#">Investor Relations</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Speed Test</a>
+                </div>
+                <div>
+                    <a href="#">Help Centre</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Cookie Preferences</a>
+                    <a href="#">Legal Notices</a>
+                </div>
+                <div>
+                    <a href="#">Account</a>
+                    <a href="#">Ways to Watch</a>
+                    <a href="#">Corporate Information</a>
+                    <a href="#">Only on Netflix</a>
+                </div>
+                <div>
+                    <a href="#">Media Centre</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+    
+            <button class="language-select"><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 16 16" width="16" height="16" data-icon="LanguagesSmall" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z" fill="currentColor"></path></svg> English <svg class="svg
+                " xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 16 16" width="16" height="16" data-icon="CaretDownSmall" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.5976 6.5C11.7461 6.5 11.8204 6.67956 11.7154 6.78457L8.23574 10.2643C8.10555 10.3945 7.89445 10.3945 7.76425 10.2643L4.28457 6.78457C4.17956 6.67956 4.25393 6.5 4.40244 6.5H11.5976Z" fill="currentColor"></path></svg></button>
+            <p style="color: whitesmoke; font-size: small;margin: 33px 0px;">Netflix India</p>
+        </div>
+
+
+
+
+
+    </main>
 
 
 

@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(images/background-netflix.jpg);
+    height: 100dvh;
+    position: relative;
+}
+
+.main .box {
+    height: 100dvh;
+    width: 100%;
+    opacity: 0.73;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav svg {
+    width: 157px;
+    height: 52px;
+    position: relative;
+    z-index: 10;
+}
+
+nav {
+    margin: auto;
+    width: 70dvw;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    height: 75vh;
+    width: 100%;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: red; */
+    position: relative;
+    z-index: 10;
+    color: white;
+    padding: 27px 0px 0px 0px;
+    bottom: -69px;
+}
+
+.hero h1 {
+    font-size: 56px;
+}
+
+.hero h2 {
+    margin: 0px 0px 18px 0px;
+    font-size: 26px;
+}
+
+.hero p {
+    margin: 23px;
+    font-size: larger;
+}
+
+.main input {
+    font-size: 29px;
+    background-color: rgba(23, 23, 23, 0.2);
+}
+
+/* button .shot{
+    position: relative;
+    left: 12px;
+} */
+.email-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 695px;
+}
+
+.email-input {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+}
+
+.start-button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    font-size: 29px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    bottom: 2px;
+}
+
+.curved-section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 26px;
+    background: linear-gradient(to bottom, #e50914, #0a0a0a);
+    border-top-left-radius: 101% 47px;
+    border-top-right-radius: 101% 47px;
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.start-button:hover {
+    background-color: #d40812;
+}
+
+.secondbox {
+    height: 50vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.boxes {
+
+    height: 210px;
+    width: 174px;
+    border-radius: 11px;
+}
+
+.boxes img {
+    height: 250px;
+    width: 184px;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+.boxses1 {
+    display: flex;
+    height: 54vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0px 25px 13px 25px;
+}
+
+.insidebox {
+    height: 47vh;
+    width: 17vw;
+    border: 2px solid black;
+    border-radius: 26px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    gap: 4px;
+    color: white;
+
+
+}
+
+.insidebox p {
+    font-size: medium;
+}
+
+.insidebox img {
+    position: relative;
+    bottom: 0px;
+    left: 80px;
+}
+
+.blackboxses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+
+
+}
+
+.black {
+    height: 12vh;
+    width: 77vw;
+    background-color: rgb(45, 45, 45);
+    color: rgb(255, 255, 255);
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.68, 0.06);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.black:hover {
+    background-color: rgb(70, 70, 70);
+    /* Change to a different color */
+}
+
+.black p {
+    margin: 17px;
+}
+
+.blackboxses .black svg {
+    height: 40px;
+    width: 40px;
+    right: 30px;
+    font-size: 350px;
+    position: relative;
+}
+
+
+.email-container1{
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: auto;
+}
+
+.email-text {
+    margin: 70px 0px 0px 0px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.email-input1 {
+    width: 550px;
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.email-input:focus {
+    outline: 2px solid white;
+}
+
+.email-button1 {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 12px 27px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.email-button1:hover {
+    background-color: rgb(200, 0, 0);
+}
+
+.footer {
+    padding: 20px;
+    margin: 37px 81px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration-color: rgba(255, 255, 255, 0.7);
+    display: block;
+    margin-bottom: 10px;
+}
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 30px 0;
+}
+.language-select {
+    border: 1px solid #333;
+    padding: 5px 10px;
+    color: white;
+    background: black;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.language-select svg{
+    position: relative;
+    left: -3px;
+    bottom: -3px;
+
+}
+.svg{
+    position: relative;
+    left: 2px;
+    bottom: 1px;
+}
