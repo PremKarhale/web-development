@@ -15,6 +15,7 @@ body {
     background-image: url(images/background-netflix.jpg);
     height: 100dvh;
     position: relative;
+    padding: 12px 0px 0px 0px;
 }
 
 .main .box {
@@ -73,7 +74,9 @@ nav {
 }
 
 .main input {
-    font-size: 29px;
+    width: 429px;
+    padding: 18px;
+    font-size: 16px;
     background-color: rgba(23, 23, 23, 0.2);
 }
 
@@ -97,10 +100,15 @@ nav {
 }
 
 .start-button {
+    
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #e50914;
     color: white;
     border: none;
-    padding: 8px 14px;
+    padding: 7px 14px 15px 14px;
     font-size: 29px;
     border-radius: 5px;
     cursor: pointer;
