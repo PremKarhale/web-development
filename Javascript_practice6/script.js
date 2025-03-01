@@ -1,5 +1,7 @@
+// proprities used in the javascript.....
+
 console.log("write your name :")
-let name="hari"
+let name="prem"
 let b=" Dnyaneshwar"
 console.log(name)
 console.log(name[0])
