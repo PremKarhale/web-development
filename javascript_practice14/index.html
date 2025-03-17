@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Hey i am the box</div>
+    </div>
+    <script>
+        let div=document.createElement("div");
+        div.innerHTML=" i have been inserted by prem "
+        div.setAttribute("class","created ");
+        document.querySelector(".container").before(div);
+
+        let cont=document.querySelector(".container");
+        cont.insertAdjacentHTML("beforebegin","<b> hey i am very happy today </b>");
+
+    </script>
+</body>
+</html>
