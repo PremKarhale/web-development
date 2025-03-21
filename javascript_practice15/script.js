@@ -14,3 +14,9 @@ Array.from(box).forEach(element => {
     element.style.backgroundColor=getrandomcolor();
     element.style.color=getrandomcolor();
 });
+setInterval(()=>{
+    document.querySelectorAll(".box").forEach(element => {
+        element.style.backgroundColor=getrandomcolor();
+    });
+
+},100)
