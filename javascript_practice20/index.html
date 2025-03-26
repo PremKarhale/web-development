@@ -1,47 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>card using java script </title>
+    <title>Card desing</title>
     <style>
-        .container{
-            height: 23vh;
-            width: 85%;
-            background-color: black;
-            margin: auto;
+        .card {
             display: flex;
-        }
-        img{
-            height: 23vh;
-            border-radius: 6px;
-            object-fit: cover;
-            object-position: top left;
-        }
-        .image{
-            height: 23vh;
-            /* width: 18%; */
-            background-color: red;
-         
-        }
-        .details{
-            height: 23vh;
-            
-            background-color: aqua;
+            border: 2px solid black;
+            width: 900px;
+            background-color: black;
+            border-radius: 4px;
 
         }
 
-       
+        .image img {
+            height: 100%;
+            width: 100%;
+            border-radius: 4px;
+            position: relative;
+
+        }
+
+        .text {
+            color: white;
+
+            h1,
+            p {
+                padding: 4px;
+
+            }
+
+           .image .cap{
+            color: white;
+           }
+        }
+        
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="image"><img src="https://i.ytimg.com/vi/kJEsTjH5mVg/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLBYghRBiZcZs-xVJKq92lAM8h3BOg" alt=""></div>
-        <div class="details"></div>
+        <div class="card">
+            <div class="image"><img
+                    src="https://i.ytimg.com/vi/kJEsTjH5mVg/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLBYghRBiZcZs-xVJKq92lAM8h3BOg"
+                    alt="">
+                <div style=" position: absolute;
+                z-index: 10;
+                top: 89px;
+                left: 137px;background-color: gray;opacity: 0.8;" id="cap" class="cap ">31:22</div>
+            </div>
+            <div class="text">
+                <h1 style="margin: 0px;">Introduction to backend | sigma web Dev video #2 </h1>
+                <p style="margin: 2px 0px;">code with harry . 560k views . 7 months ago </p>
 
-        <div class="details">dffffddffd</div>
- 
+            </div>
+        </div>
     </div>
-    
+
 </body>
+
 </html>
