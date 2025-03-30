@@ -4,14 +4,14 @@
             // resolve(455);
             let a =Math.random();
             if (a>0.5){
-                reject("the no is not been processed ");
+                reject("the no. is not been processed ");
                 
             }else{
                 resolve(450);
             }
             
             
-        },100);
+        },1000);
     })
 
 }
@@ -20,14 +20,21 @@ console.log("loading modules ")
 console.log("it can be anything")
 console.log("loaging data... ")
 
-let data = await getdata();
-console.log(data)
+try{
+    let data= await getdata();
+    console.log(data)
+    
+}catch(err){
+    console.log("The no. is not been processed ! Please CHECK AGIAN...")
+    return;
+}
+
 console.log("processing data ....")
  await new Promise((resolve, reject) => {
     setTimeout(() => {
         console.log("Data processed successfully !!!");
         resolve();
-    }, 100);
+    }, 1000);
  })
 
 }
