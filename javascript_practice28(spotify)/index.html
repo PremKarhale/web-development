@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>'Spotify – Search'</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
 </head>
@@ -14,7 +14,8 @@
         <div class="nav">
             <ul class="">
                 <li class="inversion"><img src="images/logo.svg" alt="spotify"></li>
-                <li class="inversion"><img style="height: 23px; width: 34px;" src="images/logo2.svg" alt="home"></li>
+                <li class="inversion circle"><img style="height: 23px; width: 34px; " src="images/logo2.svg" alt="home">
+                </li>
                 <li>
                     <div class="searchbox">
                         <img class="inversion" src="images/search.svg" alt="search">
@@ -63,13 +64,33 @@
                     <div class="Recents" style="display: flex; align-items: center; gap: 4px;">Recents <img
                             class="inversion" src="images/threelines.svg" alt=""></div>
                 </div>
+                <div class="songlist">
+                    <ul>
+                        <li>
+                            <div class="songcard">
+                                <div style="width: 25%;"><img class="" src="images/music.svg" alt=""></div>
+
+                                <div style="width: 50%; display: flex; justify-content: center; flex-direction: column;align-items: center;"
+                                    class="info">
+                                    <div>song name</div>
+                                    <div style="margin: 3px 0px 0px 68px;">artist</div>
+
+                                </div>
+                                <div style="width:16%;"> <img class="playbutton" src="images/playbutton.svg" alt="">
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
             </div>
 
         </div>
         <div class="right">
             <div class="rightnav">
-               
-                <button>ALL</button>
+
+                <button style="background-color: white; color: black;">All</button>
                 <button>Playlists</button>
                 <button>Songs</button>
                 <button>Albums</button>
@@ -77,12 +98,67 @@
                 <button>Artists</button>
                 <button>Profiles</button>
                 <button>Genres & Moods</button>
+
+            </div>
+            <div class="cardcontainer">
+                <div class="card">
+                    <div class="image"> <img src="images/song1.jpeg" alt=""></div>
+                    <div>
+                        <a draggable="false" class="Gi6Lr1whYBA2jutvHvjQ" href="/album/3RaIXDlIRvziryGLXm8lBR">
+                            <p class="e-9640-text encore-text-body-medium CardTitle__CardText-sc-1h38un4-1 eznGBk xHz124sSHSCYHecLCTfi"
+                                data-encore-id="cardTitle" id="card-title-spotify:album:3RaIXDlIRvziryGLXm8lBR-0"
+                                aria-describedby="onClickHintspotify:album:3RaIXDlIRvziryGLXm8lBR-0" title="Daku"
+                                dir="auto"><span class="CardTitle__LineClamp-sc-1h38un4-0 RBShQ"><span
+                                        class="daku">Daku</span></span></p>
+                        </a>
+                    </div>
+                    <div>
+                        <p style="display: flex; align-items: center;margin: 0px 11px; color: #979787;"> 2021 <img
+                                style=" width: 9px; fill: black; " src="images/dot.svg" alt="">channi Nattan</p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="image"> <img src="images/song1.jpeg" alt=""></div>
+                    <div>
+                        <a draggable="false" class="Gi6Lr1whYBA2jutvHvjQ" href="/album/3RaIXDlIRvziryGLXm8lBR">
+                            <p class="e-9640-text encore-text-body-medium CardTitle__CardText-sc-1h38un4-1 eznGBk xHz124sSHSCYHecLCTfi"
+                                data-encore-id="cardTitle" id="card-title-spotify:album:3RaIXDlIRvziryGLXm8lBR-0"
+                                aria-describedby="onClickHintspotify:album:3RaIXDlIRvziryGLXm8lBR-0" title="Daku"
+                                dir="auto"><span class="CardTitle__LineClamp-sc-1h38un4-0 RBShQ"><span
+                                        class="daku">Daku</span></span></p>
+                        </a>
+                    </div>
+                    <div>
+                        <p style="display: flex; align-items: center;margin: 0px 11px; color: #979787;"> 2021 <img
+                                style=" width: 9px; fill: black; " src="images/dot.svg" alt="">channi Nattan</p>
+                    </div>
+
+                </div>
+
+
+
             </div>
 
         </div>
+
+    </div>
+    <div class="fotter">
+        <div class="songinfo"></div>
+        <div class="playbuttons">
+            <div style="display: flex;justify-content: center;">
+
+                <img class=" pause" style="height: 35ps;width: 35px; " src="images/back.svg" alt="">
+                <img class="  pause" style="height: 35ps;width: 38px;" src="images/play.svg" alt="">
+                <img class=" pause" style="height: 35ps;width: 35px;" src="images/forward.svg" alt="">
+            </div>
+        </div>
+        <div class="volume"></div>
     </div>
 
-
+    <script src="script.js"></script>
 </body>
+
+
 
 </html>
