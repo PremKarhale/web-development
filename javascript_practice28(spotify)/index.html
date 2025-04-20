@@ -7,6 +7,8 @@
     <title>'Spotify – Search'</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
 </head>
 
 <body>
@@ -66,20 +68,7 @@
                 </div>
                 <div class="songlist">
                     <ul>
-                        <li>
-                            <div class="songcard">
-                                <div style="width: 25%;"><img class="" src="images/music.svg" alt=""></div>
 
-                                <div style="width: 50%; display: flex; justify-content: center; flex-direction: column;align-items: center;"
-                                    class="info">
-                                    <div>song name</div>
-                                    <div style="margin: 3px 0px 0px 68px;">artist</div>
-
-                                </div>
-                                <div style="width:16%;"> <img class="playbutton" src="images/playbutton.svg" alt="">
-                                </div>
-                            </div>
-                        </li>
 
                     </ul>
                 </div>
@@ -146,12 +135,29 @@
     <div class="fotter">
         <div class="songinfo"></div>
         <div class="playbuttons">
-            <div style="display: flex;justify-content: center;">
+            <div class="footbut" style=" ">
 
-                <img class=" pause" style="height: 35ps;width: 35px; " src="images/back.svg" alt="">
-                <img class="  pause" style="height: 35ps;width: 38px;" src="images/play.svg" alt="">
-                <img class=" pause" style="height: 35ps;width: 35px;" src="images/forward.svg" alt="">
+
+                <img class=" back " src="images/back.svg" alt="">
+                <img class="play" src="images/play.svg" alt="">
+                <img class=" forward" src="images/forward.svg" alt="">
+
+
+
             </div>
+            
+                <div style="display: flex; gap: 10px;">
+                    <div class="duration1"></div>
+                <div class="seekbar">
+                    
+               
+                    <div class="circle1"></div>
+                    
+                </div>
+                <div class="duration2"></div>
+
+            </div>
+           
         </div>
         <div class="volume"></div>
     </div>
